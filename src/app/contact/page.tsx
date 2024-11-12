@@ -46,7 +46,7 @@ export default function Contact() {
         </form>
         <div className={styles.info}>
           <h2>Get in Touch</h2>
-          <p>We'd love to hear from you. Please feel free to contact us with any questions or inquiries.</p>
+          <p>We  love to hear from you. Please feel free to contact us with any questions or inquiries.</p>
           <div className={styles.contactInfo}>
             <p><strong>Email:</strong> info@luxetimepieces.com</p>
             <p><strong>Phone:</strong> +1 (555) 123-4567</p>
