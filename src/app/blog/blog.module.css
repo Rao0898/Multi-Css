@@ -1,0 +1,117 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image {
+  width: 100%; /* Ensure the image takes up the full width */
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensure the image maintains aspect ratio and fills the box */
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.date {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.readMore {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.readMore:hover {
+  color: #ffd700;
+}
+
+@media (max-width: 1024px) {
+  .container h1 {
+    font-size: 2.2rem; /* Slightly smaller heading for tablets */
+    margin-bottom: 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Slightly smaller grid items */
+    gap: 1.5rem; /* Reduced gap between grid items */
+  }
+
+  .content h2 {
+    font-size: 1.4rem; /* Slightly smaller title */
+  }
+
+  .image {
+    height: 180px; /* Adjusted image height for better scaling */
+  }
+
+  .date {
+    font-size: 0.85rem; /* Smaller font size for dates on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 1.8rem; /* Smaller heading for smaller screens */
+    margin-bottom: 1rem; /* Reduced margin */
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Stack grid items on top of each other */
+    gap: 1rem; /* Reduced gap between grid items */
+  }
+
+  .card {
+    padding: 1rem; /* Reduced padding for cards on smaller screens */
+  }
+
+  .content h2 {
+    font-size: 1.2rem; /* Smaller title for better fit on small screens */
+  }
+
+  .image {
+    height: 160px; /* Smaller image height for mobile */
+  }
+
+  .date {
+    font-size: 0.8rem; /* Smaller font size for dates on smaller screens */
+  }
+}

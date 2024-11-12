@@ -1,0 +1,139 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light background color for the container */
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333; /* Dark text color for better contrast */
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  background-color: #fff; /* White background for content section */
+  padding: 2rem;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for a more defined look */
+}
+
+.form {
+  flex: 1;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333; /* Dark text for labels */
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formGroup textarea {
+  height: 150px;
+}
+
+.button {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333; /* Dark text for headings */
+}
+
+.contactInfo {
+  margin-top: 2rem;
+}
+
+.contactInfo p {
+  margin-bottom: 0.5rem;
+  color: #666; /* Lighter color for contact info */
+}
+
+@media (max-width: 1024px) {
+  .container h1 {
+    font-size: 2rem; /* Adjusting heading size for medium screens */
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 1rem; /* Reduced gap between form and info sections */
+    padding: 1.5rem; /* Reduced padding for smaller screens */
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 0.75rem; /* Slightly increased padding for better touch interaction */
+  }
+
+  .button {
+    padding: 0.7rem 1.2rem; /* Adjusted padding for mobile-friendly buttons */
+  }
+
+  .info h2 {
+    font-size: 1.3rem; /* Smaller heading for info section */
+  }
+}
+
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 1.8rem; /* Smaller font size for smaller screens */
+    margin-bottom: 1.5rem; /* Reduced margin for smaller screens */
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 1.5rem; /* Adjusted gap for mobile */
+  }
+
+  .formGroup label {
+    font-size: 0.9rem; /* Slightly smaller font size for labels */
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 1rem; /* Increased padding for mobile-friendly inputs */
+  }
+
+  .button {
+    padding: 0.6rem 1rem; /* Adjusted padding for smaller buttons on mobile */
+  }
+
+  .info h2 {
+    font-size: 1.2rem; /* Smaller heading for mobile */
+  }
+
+  .contactInfo p {
+    font-size: 0.9rem; /* Slightly smaller font for contact info */
+  }
+}

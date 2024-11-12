@@ -1,0 +1,64 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ffd700;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .logo a {
+    font-size: 1.4rem; /* Slightly smaller logo for tablets */
+  }
+
+  .nav {
+    gap: 0.8rem; /* Reduce the gap between navigation links */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack logo and nav vertically on smaller screens */
+    padding: 1rem; /* Adjust padding for mobile */
+  }
+
+  .logo a {
+    font-size: 1.3rem; /* Smaller logo for mobile */
+    margin-bottom: 1rem; /* Add margin between logo and navigation */
+  }
+
+  .nav {
+    width: 100%; /* Make the navigation links take full width */
+    justify-content: center; /* Center the navigation links */
+    flex-direction: column; /* Stack the navigation items vertically */
+    gap: 1rem; /* Increase gap for better readability */
+  }
+
+  .nav a {
+    font-size: 1.1rem; /* Slightly larger text for mobile for better readability */
+  }
+}
